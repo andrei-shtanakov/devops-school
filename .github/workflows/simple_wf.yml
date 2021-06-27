@@ -20,7 +20,7 @@ jobs:
         - name: 1.1 UPLOADING FILES
           run: |
             cp ./scripts/main.py ./.github/actions/action_1.2/main.py
-            echo > ./.github/actions/actions_1.2/user_data.txt "${{ github.event.inputs.user_data }}"
+            echo "${{ github.event.inputs.user_data }}" > ./.github/actions/actions_1.2/user_data.txt
             echo " User Data: ${{ github.event.inputs.logLevel }}"
         - name: 1.2 EXECUTING THE PYTHON SCRIPT
           uses: ./.github/actions/action_1.2

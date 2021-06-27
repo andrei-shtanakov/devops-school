@@ -9,8 +9,9 @@ timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 with open('user_data.txt', 'r') as f:
     user_data = f.readline()
+    print("PRINT FROM PYTHON: USAR_DATA = " + user_data)
 
-with open('output.txt', 'w') as f:
-    f.write(f'{user_data}  # {timestamp}')
+    with open('output.txt', 'w') as w:
+        w.write(f'{user_data}  # {timestamp}')
     
 print("PRINT FROM PYTHON: ACTION 1.2 - COMPLETED")

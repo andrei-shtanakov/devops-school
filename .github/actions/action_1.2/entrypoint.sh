@@ -9,5 +9,5 @@ ls -lah
 echo "pwd"
 pwd
 
-echo "ls -lah /github/workspace"
+echo "ls -lah /github/workspace/.github/actions/action_1.2/"
 ls -lah /github/workspace

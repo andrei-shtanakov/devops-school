@@ -12,6 +12,6 @@ with open('user_data.txt', 'r') as f:
     print("PRINT FROM PYTHON: USAR_DATA = " + user_data)
 
     with open('output.txt', 'w') as w:
-        w.write(f'{user_data}  # {timestamp}')
+        w.write(user_data + ' #  ' + timestamp)
     
 print("PRINT FROM PYTHON: ACTION 1.2 - COMPLETED")

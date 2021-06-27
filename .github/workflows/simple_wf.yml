@@ -21,7 +21,7 @@ jobs:
           run: |
             cp ./scripts/main.py ./.github/actions/action_1.2/main.py
             echo "${{ github.event.inputs.user_data }}" > ./.github/actions/action_1.2/user_data.txt
-            echo "${{ github.event.inputs.user_data }}" > /github/workspace/user_data.txt
+            echo "${{ github.event.inputs.user_data }}" > /user_data.txt
             echo " User Data: ${{ github.event.inputs.user_data }}"
         - name: 1.2 EXECUTING THE PYTHON SCRIPT
           uses: ./.github/actions/action_1.2
